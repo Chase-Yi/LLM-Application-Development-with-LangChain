@@ -125,8 +125,6 @@ The Transformer model was designed to overcome the limitations of RNNs and LSTMs
 
 In simple terms, the Transformer does not only focus on the current word and its neighboring words; it also pays attention to all other words in the sequence and assigns different attention weights to each word. These attention weights are learned by the model during training, allowing the Transformer to understand the strength of relationships between words, even if they are far apart.
 
----
-
 # Key Innovations: Self-Attention and Positional Encoding
 
 Two key innovations make the Transformer model highly effective:
