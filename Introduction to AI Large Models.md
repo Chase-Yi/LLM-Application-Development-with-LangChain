@@ -78,6 +78,15 @@ graph TB;
             end
         end
     end
+
+    style AI fill:#FFCC00,stroke:#333,stroke-width:2px
+    style ML fill:#FF9900,stroke:#333,stroke-width:2px
+    style SL fill:#66CCFF,stroke:#333,stroke-width:2px
+    style UL fill:#66FF66,stroke:#333,stroke-width:2px
+    style RL fill:#FF6699,stroke:#333,stroke-width:2px
+    style DL fill:#99CCFF,stroke:#333,stroke-width:2px
+    style GA fill:#FF6666,stroke:#333,stroke-width:2px
+    style LLM fill:#66FF99,stroke:#333,stroke-width:2px
 ```
 
 ### Explanation:
