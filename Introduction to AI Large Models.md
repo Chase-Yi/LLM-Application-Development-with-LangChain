@@ -51,8 +51,6 @@ Large Language Models (LLMs) are a specialized application of deep learning desi
 ## How LLMs Work
 LLMs are trained on massive text datasets and excel in understanding and generating high-quality text. For example, GPT-3 generates text based on input prompts by calculating probabilities and predicting the next word or token in a sequence.
 
----
-
 # Visualization
 
 ```mermaid
