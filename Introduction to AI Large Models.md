@@ -51,16 +51,26 @@ Large Language Models (LLMs) are a specialized application of deep learning desi
 ## How LLMs Work
 LLMs are trained on massive text datasets and excel in understanding and generating high-quality text. For example, GPT-3 generates text based on input prompts by calculating probabilities and predicting the next word or token in a sequence.
 
+---
+
+# Visualization
+
 ```mermaid
-graph TD;
-    AI[Artificial Intelligence] --> ML[Machine Learning]
-    
-    ML --> SL[Supervised Learning]
-    ML --> UL[Unsupervised Learning]
-    ML --> RL[Reinforcement Learning]
-    ML --> DL[Deep Learning]
-
-    DL --> GA[Generative AI]
-    GA --> LLM[Large Language Models]
+venn
+    title AI and Its Subfields
+    AI [Artificial Intelligence]
+    ML [Machine Learning] AI
+    SL [Supervised Learning] ML
+    UL [Unsupervised Learning] ML
+    RL [Reinforcement Learning] ML
+    DL [Deep Learning] ML
+    GA [Generative AI] DL
+    LLM [Large Language Models] GA
 ```
-
+### Explanation:
+- **AI** is the largest set.
+- **Machine Learning (ML)** is a subset of AI.
+- **Supervised Learning (SL), Unsupervised Learning (UL), and Reinforcement Learning (RL)** belong to ML.
+- **Deep Learning (DL)** is a specialized method within ML.
+- **Generative AI (GA)** emerges from Deep Learning.
+- **Large Language Models (LLM)** are a specialized type of Generative AI.
