@@ -56,16 +56,30 @@ LLMs are trained on massive text datasets and excel in understanding and generat
 # Visualization
 
 ```mermaid
-venn
-    title AI and Its Subfields
-    AI [Artificial Intelligence]
-    ML [Machine Learning] AI
-    SL [Supervised Learning] ML
-    UL [Unsupervised Learning] ML
-    RL [Reinforcement Learning] ML
-    DL [Deep Learning] ML
-    GA [Generative AI] DL
-    LLM [Large Language Models] GA
+graph TB;
+    AI["Artificial Intelligence"] --> ML["Machine Learning"]
+    
+    ML --> SL["Supervised Learning"]
+    ML --> UL["Unsupervised Learning"]
+    ML --> RL["Reinforcement Learning"]
+    ML --> DL["Deep Learning"]
+
+    DL --> GA["Generative AI"]
+    GA --> LLM["Large Language Models"]
+
+    subgraph AI_Group [Artificial Intelligence]
+        ML
+        subgraph ML_Group [Machine Learning]
+            SL
+            UL
+            RL
+            DL
+            subgraph DL_Group [Deep Learning]
+                GA
+                LLM
+            end
+        end
+    end
 ```
 ### Explanation:
 - **AI** is the largest set.
