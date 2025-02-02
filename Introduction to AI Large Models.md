@@ -150,6 +150,8 @@ These innovations make the Transformer capable of parallelizing computation and 
 
 # Transformer - Encoder & Decoder
 
+![The Transformer - model architecture](https://github.com/Chase-Yi/LLM-Application-Development-with-LangChain/blob/main/image/The_Transformer.png?raw=true)
+
 ## 1. Input Processing
 
 The Transformer begins by processing the input text through several steps:
