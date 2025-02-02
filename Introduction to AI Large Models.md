@@ -1,6 +1,6 @@
 # Table Of Contents
 
-- [AI and Its Subfields](# AI and Its Subfields)
+- [AI and Its Subfields](#ai-and-its-subfields)
 
 # AI and Its Subfields
 
