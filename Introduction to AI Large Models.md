@@ -146,3 +146,86 @@ Two key innovations make the Transformer model highly effective:
 
 These innovations make the Transformer capable of parallelizing computation and significantly improving training efficiency. With the ability to process input sequences in parallel and capture long-range dependencies, the Transformer has become the foundation for modern LLMs.
 
+---
+
+# Transformer - Encoder & Decoder
+
+## 1. Input Processing
+
+The Transformer begins by processing the input text through several steps:
+
+- **Tokenization:**  
+  The input sentence is first split into tokens—the basic units of text. Depending on the tokenization method, short words may correspond to a single token, while longer words might be divided into multiple tokens.
+
+- **Token IDs:**  
+  Each token is then converted into a unique integer (token ID) because computers operate with numerical data rather than raw text.
+
+- **Embedding:**  
+  These token IDs are mapped to dense vectors (embeddings). An embedding represents a token as a series of numbers that capture semantic and syntactic properties. Similar words tend to have embeddings that are close to one another in the vector space, enabling the model to understand nuances like meaning and context.
+
+## 2. Positional Encoding
+
+Since the Transformer architecture itself lacks any inherent notion of sequence order, positional encoding is crucial:
+
+- **Purpose:**  
+  Positional encodings inject information about the position of tokens in the sequence.
+
+- **Method:**  
+  A positional vector (indicating the token’s position) is added to the token’s embedding. This allows the model to capture the order of words, which is essential for understanding syntax and context.
+
+## 3. Encoder Architecture
+
+The encoder's main goal is to transform the input sequence into an abstract, context-rich representation:
+
+- **Self-Attention Mechanism:**  
+  Each token attends to every other token in the sequence by computing pairwise attention scores. This mechanism enables the encoder to capture both local and long-range dependencies.
+
+- **Multi-Head Self-Attention:**  
+  Instead of a single attention mechanism, the encoder employs multiple attention heads. Each head focuses on different aspects of the sequence (e.g., verbs, adjectives, sentiment, named entities) in parallel, enhancing the model's ability to understand complex relationships.
+
+- **Feed-Forward Neural Network:**  
+  Following the self-attention layer, a position-wise feed-forward network further processes the output, enriching the representation.
+
+- **Stacking Layers:**  
+  The encoder is composed of several identical layers (stacks). Although each layer has the same structure, they do not share parameters. This stacking allows the model to gradually build a deeper and more nuanced understanding of the input.
+
+## 4. Decoder Architecture
+
+The decoder is responsible for generating the output sequence (e.g., translating English to French) by predicting one token at a time:
+
+- **Input to the Decoder:**  
+  The decoder receives a special token that signifies the start of the output sequence. With each step, it also takes the previously generated tokens as input to maintain context.
+
+- **Embedding and Positional Encoding:**  
+  Similar to the encoder, the decoder first converts its input tokens into embeddings and adds positional encodings to account for token order.
+
+- **Masked Self-Attention:**  
+  In the decoder, self-attention is modified with masking. This ensures that, when predicting the next token, the model only attends to the already generated tokens and not to future ones. This masking enforces the correct sequential order in generation.
+
+- **Encoder-Decoder Attention:**  
+  A separate multi-head attention layer allows the decoder to attend to the encoder’s output. This step integrates information from the input sequence, ensuring that the generated output is contextually aligned with the source text.
+
+- **Feed-Forward Network and Final Layers:**  
+  After the attention mechanisms, a feed-forward network processes the output further. Finally, a linear layer followed by a softmax layer converts the final representation into a probability distribution over the vocabulary, predicting the next token.
+
+## 5. Generation Process and Hallucination
+
+- **Iterative Token Generation:**  
+  The decoder repeatedly predicts the next most probable token based on the previously generated sequence. This process continues until a special end-of-sequence token is produced.
+
+- **Hallucination:**  
+  Since the decoder is essentially guessing the next token solely based on learned probabilities, it sometimes generates text that is factually incorrect or nonsensical. This phenomenon is commonly referred to as "hallucination."
+
+## 6. Transformer Variants
+
+Several variants of the original Transformer architecture have emerged, each tailored to specific tasks:
+
+- **Encoder-Only Models (Autoencoders):**  
+  These models, such as BERT, utilize only the encoder. They are well-suited for language understanding tasks like masked language modeling and sentiment analysis.
+
+- **Decoder-Only Models (Autoregressive Models):**  
+  Models like GPT-2 and GPT-3 rely solely on the decoder component. Their strength lies in text generation tasks, as they predict the next token in a sequence based on previously generated text.
+
+- **Encoder-Decoder Models (Sequence-to-Sequence Models):**  
+  Models such as T5 and BART employ both an encoder and a decoder. They are designed for tasks that require transforming one sequence into another, including translation, summarization, and other text-to-text applications.
+
