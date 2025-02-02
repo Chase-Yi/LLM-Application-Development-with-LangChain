@@ -1,5 +1,3 @@
-[[TOC]]
-
 # AI and Its Subfields
 
 ## Artificial Intelligence (AI)
