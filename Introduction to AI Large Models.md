@@ -1,6 +1,33 @@
 # Table Of Contents
 
 - [AI and Its Subfields](#ai-and-its-subfields)
+  - [Artificial Intelligence (AI)](#artificial-intelligence-ai)
+  - [Machine Learning (ML)](#machine-learning-ml)
+    - [Supervised Learning](#supervised-learning)
+    - [Unsupervised Learning](#unsupervised-learning)
+    - [Reinforcement Learning (RL)](#reinforcement-learning-rl)
+- [Deep Learning and Neural Networks](#deep-learning-and-neural-networks)
+  - [Deep Learning](#deep-learning)
+  - [Neural Networks](#neural-networks)
+  - [Relationship to Other Learning Types](#relationship-to-other-learning-types)
+- [Generative AI and AI-Generated Content (AIGC)](#generative-ai-and-ai-generated-content-aigc)
+  - [Generative AI](#generative-ai)
+  - [AI-Generated Content (AIGC)](#ai-generated-content-aigc)
+- [Large Language Models (LLMs) - Part 1](#large-language-models-llms---part-1)
+  - [What Are LLMs?](#what-are-llms)
+  - [How LLMs Work](#how-llms-work)
+- [Visualization](#visualization)
+- [Large Language Models (LLM) - Part 2](#large-language-models-llm---part-2)
+- [Transformer Architecture](#transformer-architecture)
+- [Recurrent Neural Networks (RNN) and Their Limitations](#recurrent-neural-networks-rnn-and-their-limitations)
+- [The Transformer: Solving Long-Range Dependencies](#the-transformer-solving-long-range-dependencies)
+- [Key Innovations: Self-Attention and Positional Encoding](#key-innovations-self-attention-and-positional-encoding)
+- [Transformer - Encoder & Decoder](#transformer---encoder--decoder)
+- [How ChatGPT Was Built](#how-chatgpt-was-built)
+  - [1. Unsupervised Pre-training](#1-unsupervised-pre-training)
+  - [2. Supervised Fine-Tuning (SFT)](#2-supervised-fine-tuning-sft)
+  - [3. Reinforcement Learning with Human Feedback (RLHF)](#3-reinforcement-learning-with-human-feedback-rlhf)
+  - [Conclusion](#conclusion)
 
 # AI and Its Subfields
 
