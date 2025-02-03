@@ -17,7 +17,7 @@
   - [What Are LLMs?](#what-are-llms)
   - [How LLMs Work](#how-llms-work)
 - [Visualization](#visualization)
-- [Large Language Models (LLMs) - Part 2](#large-language-models-llm---part-2)
+- [Large Language Models (LLMs) - Part 2](#large-language-models-llms---part-2)
 - [Transformer Architecture](#transformer-architecture)
 - [Recurrent Neural Networks (RNN) and Their Limitations](#recurrent-neural-networks-rnn-and-their-limitations)
 - [The Transformer: Solving Long-Range Dependencies](#the-transformer-solving-long-range-dependencies)
