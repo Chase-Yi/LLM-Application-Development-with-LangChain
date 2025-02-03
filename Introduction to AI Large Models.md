@@ -17,7 +17,7 @@
   - [What Are LLMs?](#what-are-llms)
   - [How LLMs Work](#how-llms-work)
 - [Visualization](#visualization)
-- [Large Language Models (LLM) - Part 2](#large-language-models-llm---part-2)
+- [Large Language Models (LLMs) - Part 2](#large-language-models-llm---part-2)
 - [Transformer Architecture](#transformer-architecture)
 - [Recurrent Neural Networks (RNN) and Their Limitations](#recurrent-neural-networks-rnn-and-their-limitations)
 - [The Transformer: Solving Long-Range Dependencies](#the-transformer-solving-long-range-dependencies)
@@ -128,7 +128,7 @@ graph TB;
 - **Generative AI (GA)** emerges from Deep Learning.
 - **Large Language Models (LLM)** are a specialized type of Generative AI.
 
-# Large Language Models (LLM) - Part 2
+# Large Language Models (LLMs) - Part 2
 
 Large Language Models (LLMs) are deep learning models designed for natural language tasks. By inputting textual content, the model can generate corresponding outputs for various tasks, such as generation, classification, summarization, rewriting, and more. 
 
