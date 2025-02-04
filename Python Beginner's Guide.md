@@ -1,6 +1,6 @@
 # Table Of Contents
 
-- Print Function Tutorial](#print-function-tutorial)
+- [Print Function Tutorial](#print-function-tutorial)
 
 # Print Function Tutorial
 
