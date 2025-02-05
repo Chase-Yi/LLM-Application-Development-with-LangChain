@@ -136,8 +136,6 @@ Mom!!
     - **Explanation:**  
       Triple quotes (`'''...'''`) allow for the creation of a multiline string. This statement prints the entire block of text exactly as it appears, preserving all line breaks and spaces. This is especially useful for printing large blocks of text, such as paragraphs or formatted data.
 
----
-
 ### Advanced `print` Usage Summary
 
 - **String Concatenation:**  
@@ -151,6 +149,32 @@ Mom!!
 
 - **Multiline Strings:**  
   Use triple quotes (`'''...'''` or `"""..."""`) to create strings that span multiple lines. This helps in preserving the format and layout of the text.
+
+```python
+print("Hello" + " world" + "!")
+print('He said "good!"')
+print("He said 'good!'")
+print("He said \"Let\'s go!\"")
+
+print("\n")
+print("Hello!\nHi!")
+
+print("\n")
+print('''No man is an island,
+Entire of itself,
+Every man is a piece of the continent,
+A part of the main.
+If a clod be washed away by the sea,
+Europe is the less.
+As well as if a promontory were.
+As well as if a manor of thy friend’s
+Or of thine own were:
+Any man’s death diminishes me,
+Because I am involved in mankind,
+And therefore never send to know for whom the bell tolls;
+It tolls for thee.
+''')
+```
 
 ### Expected Output:
 ```
